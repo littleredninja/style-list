@@ -8,8 +8,8 @@ StyleList is a dashboard for stylists.  Stylists can view their client list and 
 
 Visit [StyleList](https://style-list.herokuapp.com/) to view a sample dashboard.  A demonstration user account can be accessed via the info below:
 
-Email: jennie@jennie.jennie
-Password:  jennie
+Email: jennie@jennie.jennie  
+Password:  jennie  
 
 ## Dependencies
 
