@@ -6,10 +6,18 @@ StyleList is a dashboard for stylists.  Stylists can view their client list and 
 
 ## Getting Started
 
-Visit [StyleList](https://style-list.herokuapp.com/) to view a sample dashboard.  A demonstration user account can be accessed via the info below:
+To view the live app, visit [StyleList](https://style-list.herokuapp.com/) to view a sample dashboard.  A demonstration user account can be accessed via the info below:
 
 Email: jennie@jennie.jennie  
 Password:  jennie  
+
+To run the app locally, clone this repo and bundle install.  Then run:
+
+//rake db:create
+//rake db:migrate
+//rake db:seed
+
+This will seed the above username and password and sample data for use locally.
 
 ## Dependencies
 
