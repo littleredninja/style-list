@@ -13,9 +13,11 @@ Password:  jennie
 
 To run the app locally, clone this repo and bundle install.  Then run:
 
-``rake db:create  
-``rake db:migrate  
-``rake db:seed  
+```
+rake db:create  
+rake db:migrate  
+rake db:seed  
+```
 
 This will seed the above username and password and sample data for use locally.
 
