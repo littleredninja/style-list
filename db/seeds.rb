@@ -8,7 +8,7 @@
 
 stylist = Stylist.create(
 	email:  "jennie@jennie.jennie", 
-	name: "jennie",
+	name: "Jennie",
 	password: "jennie"
 	)
 
