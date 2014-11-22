@@ -1,0 +1,27 @@
+<h1> Styling <%= @client.full_name %> </h1>
+
+<div> 
+	<% if @clients %>
+		<% @clients.each do |client| %>
+			<li><%= link_to client.full_name, client_path(client) %></li>
+		<% end %>
+	<% end %>
+</div>
+
+<div>
+	<% if @sales %>
+		<h1> <%= number_to_currency(@sales) %></h1>
+	<% end %>
+</div>
+
+<div>
+	<% if @trunks %>
+		<%= @trunks.count %>
+	<% end %>
+</div>
+
+<div>
+	<% if @sales_percentage %>
+		<%= @sales_percentage %> %
+	<% end %>
+</div>

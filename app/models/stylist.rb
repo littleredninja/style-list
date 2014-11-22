@@ -9,9 +9,9 @@ class Stylist < ActiveRecord::Base
 		sales = 0
 		trunks.each do |trunk|
 			trunkItems = trunk.trunk_items
-			trunkItems.each do |trunk_item|
-				if trunk_item.sold == true
-					sales += trunk_item.item.sale_price
+			trunkItems.each do |trunkItem|
+				if trunkItem.sold == true
+					sales += trunkItem.item.sale_price
 				end
 			end
 		end
@@ -19,14 +19,14 @@ class Stylist < ActiveRecord::Base
 	end
 
 	def stylist_total_trunk_price(trunks)
-		total_possible_sales = 0
+		totalPossibleSales = 0
 		trunks.each do |trunk|
-			trunk_items = trunk.trunk_items
-			trunk_items.each do |trunk_item|
-				total_possible_sales += trunk_item.item.sale_price
+			trunkItems = trunk.trunk_items
+			trunkItems.each do |trunkItem|
+				totalPossibleSales += trunkItem.item.sale_price
 			end
 		end
-		return total_possible_sales
+		return totalPossibleSales
 	end
 
 	def stylist_sales_percentage(trunks)
