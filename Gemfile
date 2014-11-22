@@ -42,3 +42,5 @@ gem "binding_of_caller", group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+# Use 12-factor for Heroku deployment
+gem 'rails_12factor', group: :production
