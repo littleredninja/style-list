@@ -3,24 +3,27 @@
 <button><%= link_to "Back to your StyleList", stylist_path(@stylist) %></button>
 
 <div class="trunk-number">
+	<h2><%= @client.first_name %>'s Trunks</h2>
 	<% if @trunks %>
 		<%= @trunks.count %>
 	<% end %>
 </div>
 
 <div class="dollar-amount">
+	<h2><%= @client.first_name %>'s Total Purchases</h2>
 	<% if @sales %>
 		<h1> <%= number_to_currency(@sales) %></h1>
 	<% end %>
 </div>
 
 <div class="percentage">
+	<h2><%= @client.first_name %>'s Percentage of Purchases</h2>
 	<% if @salesPercentage %>
 		<%= @salesPercentage %> %
 	<% end %>
 </div>
 
-<div class="item-list">
+<div class="item list">
 	<h2>Sold Items</h2>
 	<% if @soldItems %>
 		<% @soldItems.each do |soldItem| %>
@@ -29,7 +32,7 @@
 	<% end %>
 </div>
 
-<div class="item-list">
+<div class="item list">
 	<h2>Unsold Items</h2>
 	<% if @unsoldItems %>
 		<% @unsoldItems.each do |unsoldItem| %>

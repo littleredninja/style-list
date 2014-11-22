@@ -1,6 +1,7 @@
 <h1 class='headline'> Hello <%= @stylist.name %>! </h1>
 
-<div class="client-list"> 
+<div class="client list"> 
+	<h2>Your Adoring Clients</h2>
 	<% if @clients %>
 		<% @clients.each do |client| %>
 			<li><%= link_to client.full_name, client_path(client) %></li>
@@ -9,18 +10,21 @@
 </div>
 
 <div class="dollar-amount">
+	<h2>Your Total Sales</h2>
 	<% if @sales %>
 		<h1> <%= number_to_currency(@sales) %></h1>
 	<% end %>
 </div>
 
 <div class="trunk-number">
+	<h2>Trunks Shipped</h2>
 	<% if @trunks %>
 		<%= @trunks.count %>
 	<% end %>
 </div>
 
 <div class="percentage">
+	<h2>Percentage of Items Sold</h2>
 	<% if @salesPercentage %>
 		<%= @salesPercentage %> %
 	<% end %>
