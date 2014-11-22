@@ -10,9 +10,10 @@ Rails.application.routes.draw do
 
   resources :sessions
 
-  resources :stylists
-
+  resources :stylists 
+  
   resources :clients
+  
 
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
